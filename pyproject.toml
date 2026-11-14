@@ -1,0 +1,18 @@
+[project]
+name = "weavz-autogen-mcp-example"
+version = "0.1.0"
+description = "AutoGen agents connected to Weavz over MCP"
+requires-python = ">=3.11,<3.14"
+dependencies = [
+  "autogen-agentchat==0.7.5",
+  "autogen-ext[mcp,openai]==0.7.5",
+  "mcp>=1.30,<2",
+  "pytest>=8,<9",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
+
+[tool.uv]
+package = false
