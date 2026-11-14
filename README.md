@@ -1,4 +1,21 @@
-# AutoGen + Weavz MCP
+# AutoGen MCP integration examples with Weavz
+
+<!-- weavz:discovery:start -->
+
+Connect AutoGen to GitHub, Slack, Jira Cloud and Gmail through a remote Weavz Model Context Protocol (MCP) server. Use the native MCP adapter, then try the app setup recipes with your configured connections.
+
+App setup recipes:
+
+- [GitHub MCP with AutoGen Python](docs/app-recipes.md#github-mcp-with-autogen-python)
+- [Slack MCP with AutoGen Python](docs/app-recipes.md#slack-mcp-with-autogen-python)
+- [Jira Cloud MCP with AutoGen Python](docs/app-recipes.md#jira-cloud-mcp-with-autogen-python)
+- [Gmail MCP with AutoGen Python](docs/app-recipes.md#gmail-mcp-with-autogen-python)
+
+The framework consumes app tools from your configured Weavz MCP server. App recipes require your own app connections; automated checks use synthetic records.
+
+[MCP app and framework directory](https://github.com/weavz/mcp-examples/blob/main/docs/integrations.md) · [All examples](https://github.com/weavz/mcp-examples) · [Weavz MCP guide](https://weavz.io/docs/guides/agent-framework-examples)
+
+<!-- weavz:discovery:end -->
 
 Connects Microsoft's AutoGen AgentChat through the native `McpWorkbench` and Streamable HTTP adapter. Configure a custom Weavz MCP server in Tools Mode or Code Mode first; the `--mode` option verifies tools from the configured server. The personal `/mcp/weavz` connector uses OAuth and does not accept a copied MCP bearer token.
 
