@@ -1,0 +1,5 @@
+- Use AutoGen AgentChat's native `McpWorkbench` with `StreamableHttpServerParams` for authenticated Streamable HTTP; keep it in an async context.
+- AutoGen MCP client currently requires the MCP Python SDK 1.x line, so retain the `mcp<2` pin in this example.
+- Unknown OpenAI-compatible model identifiers require an explicit AutoGen `ModelInfo`; do not guess capabilities for a provider model.
+- Fixture data is synthetic and local. It does not prove hosted Weavz access or a model response.
+- Keep `.env` and tokens out of git. `WEAVZ_MCP_TOKEN` is an MCP access token, never a Weavz REST API key.
